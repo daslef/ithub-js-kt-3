@@ -1,9 +1,25 @@
 /**
  * @param {any[]} initialArray - Исходный массив
- * @returns {undefined} 
- * 
+ * @returns {undefined}
+ *
  * @description Разворот массива на месте с выводом в консоль
  */
+
 export function reverseArray(initialArray) {
-    return
+    let leftPointer = 0;
+    let rightPointer = initialArray.length - 1;
+
+    while (leftPointer < rightPointer) {
+        [initialArray[leftPointer], initialArray[rightPointer]] = [
+            initialArray[rightPointer],
+            initialArray[leftPointer],
+        ];
+
+        leftPointer++;
+        rightPointer--;
+    }
+
+    console.log(initialArray)
+
+    return initialArray;
 }
