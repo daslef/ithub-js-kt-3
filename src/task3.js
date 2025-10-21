@@ -5,5 +5,5 @@
  * @description Разворот массива на месте с выводом в консоль
  */
 export function reverseArray(initialArray) {
-    return
+    console.log(initialArray)
 }

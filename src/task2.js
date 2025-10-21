@@ -6,6 +6,9 @@
  * корректно переводимых из строки в численный вид.
  */
 export function calculateSum(values) {
-
+  if (values.length === 0) {
+    throw new Error ("Передан пустой массив")
+  }
+ 
   return 0
 }
