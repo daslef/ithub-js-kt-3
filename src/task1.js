@@ -8,6 +8,6 @@
  * перемножением всех элементов исходного массива на число
  */
 export function multipliedByN(initialArray, multiplier) {
-
+  //сделать задание
   return initialArray;
 }
