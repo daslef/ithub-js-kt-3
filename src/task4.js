@@ -8,5 +8,5 @@
  * одного элемента, удовлетворяющего проверке
  */
 export function hasCorrectElement(data, callback) {
-    return true
-}
+    return data.some(callback);
+} 

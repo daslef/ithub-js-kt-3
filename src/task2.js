@@ -6,6 +6,8 @@
  * корректно переводимых из строки в численный вид.
  */
 export function calculateSum(values) {
-
-  return 0
-}
+  return values.reduce((sum, current) => {
+    const num = Number(current);
+    return Number.isNaN(num) ? sum : sum + num;
+  }, 0);
+} 
