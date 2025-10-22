@@ -8,8 +8,9 @@
  * перемножением всех элементов исходного массива на число
  */
 export function multipliedByN(initialArray, multiplier) {
-  for (let ix = 0; ix < initialArray.length; ix++) {
-    initialArray[ix] *= multiplier={}
-  }
-  return initialArray;
+  return initialArray.map(initialArray=> initialArray * multiplier)
+//   for (let ix = 0; ix < initialArray.length; ix++) {
+//     initialArray[ix] *= multiplier={}
+//   }
+//   return initialArray;
 }
