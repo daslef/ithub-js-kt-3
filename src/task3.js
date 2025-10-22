@@ -4,11 +4,11 @@
  * 
  * @description Разворот массива на месте с выводом в консоль
  */
-export function hasCorrectElement(data, callback) {
-    for (let i = 0; i < data.length; i++) {
-        if (callback(data[i])) {
-            return true;
-        }
+export function reverseArray(initialArray) {
+    for (let i = 0; i < Math.floor(initialArray.length / 2); i++) {
+        const temp = initialArray[i];
+        initialArray[i] = initialArray[initialArray.length - 1 - i];
+        initialArray[initialArray.length - 1 - i] = temp;
     }
-    return false;
-} 
+    console.log(initialArray);
+}
