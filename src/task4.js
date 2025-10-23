@@ -8,5 +8,10 @@
  * одного элемента, удовлетворяющего проверке
  */
 export function hasCorrectElement(data, callback) {
-    return true
+    for (let ix = 0; ix<data.length; ix++) {
+        if (callback(data[ix]) === true) {
+            return true;
+        }
+    }
+    return false;
 }
