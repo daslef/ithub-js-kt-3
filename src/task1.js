@@ -10,7 +10,7 @@
 export function multipliedByN(initialArray, multiplier) {
 
   if (!Array.isArray(initialArray)) {
-    throw new TypeError("Не является массивом") 
+    throw new TypeError("Не является массивом") //ошибка
   }
   let vip = [] //создала новый массив
   for (let i = 0; i < initialArray.length; i++) { 
