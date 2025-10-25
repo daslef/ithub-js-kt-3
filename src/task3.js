@@ -1,14 +1,10 @@
 /**
  * @param {any[]} initialArray - Исходный массив
- * @returns {undefined} 
- * 
+ * @returns {undefined}
+ *
  * @description Разворот массива на месте с выводом в консоль
  */
 export function reverseArray(initialArray) {
-    
-    
- 
-
   let ix = initialArray.length - 1;
   let i = 0;
   while (ix > 0) {
@@ -17,6 +13,6 @@ export function reverseArray(initialArray) {
     i++;
   }
   console.log(initialArray);
-  
+
   return initialArray;
 }

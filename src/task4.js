@@ -8,7 +8,6 @@
  * одного элемента, удовлетворяющего проверке
  */
 
-  
 export function hasCorrectElement(data, callback) {
   for (let i = 0; i < data.length; i++) {
     if (callback(data[i])) {
@@ -17,4 +16,3 @@ export function hasCorrectElement(data, callback) {
   }
   return false;
 }
-
