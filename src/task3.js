@@ -5,5 +5,18 @@
  * @description Разворот массива на месте с выводом в консоль
  */
 export function reverseArray(initialArray) {
-    return
+    
+    
+ 
+
+  let ix = initialArray.length - 1;
+  let i = 0;
+  while (ix > 0) {
+    [initialArray[i], initialArray[ix]] = [initialArray[ix], initialArray[i]];
+    ix--;
+    i++;
+  }
+  console.log(initialArray);
+  
+  return initialArray;
 }
