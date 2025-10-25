@@ -12,6 +12,5 @@ export function multipliedByN(initialArray, multiplier) {
   for (let i = 0; i < initialArray.length; i++) {
     number.push(initialArray[i] * multiplier);
   }
-
   return number;
 }
