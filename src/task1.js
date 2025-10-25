@@ -9,5 +9,13 @@
  */
 export function multipliedByN(initialArray, multiplier) {
 
-  return initialArray;
+  if (!Array.isArray(initialArray)) {
+    throw new TypeError("Не является массивом") 
+  }
+  let vip = [] //создала новый массив
+  for (let i = 0; i < initialArray.length; i++) { 
+    vip.push(initialArray[i] * multiplier) 
+  }
+  return vip; 
 }
+
